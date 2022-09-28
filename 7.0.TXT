@@ -1,0 +1,30 @@
+ iniciar-programa
+         define-nueva-instruccion derecha como
+ inicio
+  gira-izquierda;
+  gira-izquierda;
+  gira-izquierda;
+ fin;
+  inicia-ejecucion
+         mientras no-orientado-al-norte hacer gira-izquierda;
+         mientras junto-a-zumbador hacer
+ inicio
+  coge-zumbador;
+        si no-junto-a-zumbador entonces
+ inicio
+ avanza;
+ fin
+ sino
+ inicio
+       mientras junto-a-zumbador hacer
+ inicio
+  coge-zumbador;
+  derecha;
+ fin;
+ avanza;
+       mientras no-orientado-al-norte hacer gira-izquierda;
+ fin;
+ fin;
+ apagate;
+ termina-ejecucion
+ finalizar-programa

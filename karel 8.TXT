@@ -1,0 +1,46 @@
+ iniciar-programa
+ define-nueva-instruccion derecha como
+ inicio
+  gira-izquierda;
+  gira-izquierda;
+  gira-izquierda;
+ fin;
+ inicia-ejecucion
+         derecha;
+    mientras frente-libre hacer
+ inicio
+    mientras no-junto-a-zumbador y frente-libre hacer avanza;
+    si frente-bloqueado y no-junto-a-zumbador entonces apagate;
+    mientras junto-a-zumbador hacer coge-zumbador;
+    si no-junto-a-zumbador entonces
+ inicio
+    mientras frente-libre hacer avanza;
+ gira-izquierda;
+    mientras derecha-bloqueada hacer avanza;
+          derecha;
+ avanza;
+          derecha;
+    mientras frente-libre hacer avanza;
+  gira-izquierda;
+    mientras junto-a-zumbador hacer avanza;
+    mientras algun-zumbador-en-la-mochila hacer deja-zumbador;
+ gira-izquierda;
+ gira-izquierda;
+    mientras frente-libre hacer avanza;
+    mientras no-orientado-al-norte hacer gira-izquierda;
+    mientras izquierda-bloqueada hacer avanza;
+  gira-izquierda;
+ avanza;
+  gira-izquierda;
+    mientras frente-libre hacer avanza;
+          derecha;
+    mientras frente-libre hacer avanza;
+ gira-izquierda;
+ gira-izquierda;
+ gira-izquierda;
+ fin;
+ fin;
+ apagate;
+ termina-ejecucion
+ finalizar-programa
+
